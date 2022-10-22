@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        withSonarQubeEnv(installationName: 'SonarTest', credentialsId: 'jegnzc') {
-          waitForQualityGate(abortPipeline: true, credentialsId: 'jegnzc', webhookSecretId: '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')
+        withSonarQubeEnv(installationName: 'test', credentialsId: 'jegnzc') {
+          waitForQualityGate(abortPipeline: true, credentialsId: 'jegnzc', webhookSecretId: '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')
         }
 
       }
